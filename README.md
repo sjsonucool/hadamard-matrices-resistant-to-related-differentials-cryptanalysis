@@ -87,7 +87,7 @@ This file is used as an `#include` by the C programs. Ensure it resides in the s
 
 ## Parallelization
 
-The codes can be parallelized easily by creating shell script containing lines [./a.out i] or [python3 xorcount.py i] (i=1,2,3 and so on), compiling the codes as instructed and running the script with GNU parallel as 
+The codes can be parallelized easily by creating shell script containing lines `./a.out i` or `python3 xorcount.py i` (i=1,2,3 and so on), compiling the codes as instructed and running the script with GNU parallel as 
 
     parallel -j [num_cores] < [SH filename]
 
