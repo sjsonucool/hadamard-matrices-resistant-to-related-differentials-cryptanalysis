@@ -1,7 +1,6 @@
 # Hadamard-Based MixColumns Matrices Resistant to Related-Differential Attacks
 
-This repository contains three key pieces of code (and a data file) that implement the construction and analysis of 4×4 Hadamard-based MixColumns matrices over $\mathrm{GF}(2^8)$. These matrices are analyzed for MDS (maximum distance separable) properties and tested for specific differential-attack-related relations. See our paper **Construction of Hadamard-based MixColumns1
-Matrices Resistant to Related-Differential Cryptanalysis** for further details.
+This repository contains three key pieces of code (and a data file) that implement the construction and analysis of 4×4 Hadamard-based MixColumns matrices over $\mathrm{GF}(2^8)$. These matrices are analyzed for MDS (maximum distance separable) properties and tested for specific differential-attack-related relations. See our paper **Construction of Hadamard-based MixColumns Matrices Resistant to Related-Differential Cryptanalysis** for further details.
 
 ---
 
