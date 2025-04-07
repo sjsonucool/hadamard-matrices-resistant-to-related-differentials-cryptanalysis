@@ -31,7 +31,7 @@ This repository contains three key pieces of code (and a data file) that impleme
   - Required by both `filterNoRelMatrices.c` and `binarymatrixlistoflists.c`.
  
 - **cost_from_[XZL+20]**
-  - Contains files with XOR cost, calculated from the method described in the paper [Optimizing Implementations of Linear Layers](https://doi.org/10.13154/tosc.v2020.i2.120-145), of the first 5 resistant matrices with $M[0][0]=1$. The codes can be found in this [reporitory](https://github.com/xiangzejun/Optimizing_Implementations_of_Linear_Layers.git).
+  - Contains files with XOR cost, calculated from the method described in the paper [Optimizing Implementations of Linear Layers](https://doi.org/10.13154/tosc.v2020.i2.120-145), of the first 5 resistant matrices with $M[0][0]=1$. The codes can be found in this [repository](https://github.com/xiangzejun/Optimizing_Implementations_of_Linear_Layers.git).
 ---
 
 ## Compilation and Usage
