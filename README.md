@@ -4,7 +4,7 @@ This repository contains three key pieces of code (and a data file) that impleme
 
 ---
 
-## Overview of Files
+## Overview of Files and Folders
 
 - **filterNoRelMatrices.c**  
   - Exhaustively generates 4-element tuples $\{h_0, h_1, h_2, h_3\}$ over $\mathrm{GF}(2^8)$ to form a 4×4 Hadamard matrix.
@@ -29,7 +29,9 @@ This repository contains three key pieces of code (and a data file) that impleme
 - **boxes-ref.dat**  
   - Contains lookup tables (`Alogtable` and `Logtable`) used for multiplication, exponentiation, and inverse in $\mathrm{GF}(2^8)$ (irreducible modulo polynomial $X^8 + X^4 + X^3 + X + 1$). Additionally, it also contains lookup tables for $\mathrm{GF}(2^4)$ (modulo $X^4 + X^3 + 1$ and $X^4 + X + 1$), $\mathrm{GF}(2^5)$ (modulo $X^5 + X^2 + 1$), $\mathrm{GF}(2^6)$ (modulo $X^6 + X + 1$) which can be used by specifying the correct table in the function `gmul` and correct exponent in function `modinverse`.
   - Required by both `filterNoRelMatrices.c` and `binarymatrixlistoflists.c`.
-
+ 
+- **cost_from_[XZL+20]**
+  - Contains files with XOR cost, calculated from the method described in the [paper](https://doi.org/10.13154/tosc.v2020.i2.120-145), of the first 5 resistant matrices with $M[0][0]=1$. The codes can be found in this [reporitory](https://github.com/xiangzejun/Optimizing_Implementations_of_Linear_Layers.git).
 ---
 
 ## Compilation and Usage
