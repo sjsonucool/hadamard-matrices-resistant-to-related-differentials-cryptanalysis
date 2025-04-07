@@ -22,7 +22,7 @@ This repository contains three key pieces of code (and a data file) that impleme
 
 - **xorcount.py**  
   - Reads the 4-element tuples output by `filterNoRelMatrices.c`.
-  - Uses a pre-computed XOR cost table (`GF256_XOR_count`) from the paper (**Lightweight multiplication in \(\mathrm{GF}(2^n)\) with applications to MDS matrices**, CRYPTO 2016).
+  - Uses a pre-computed XOR cost table (`GF256_XOR_count`) from the paper "[Lightweight multiplication in $\mathrm{GF}(2^n)$ with applications to MDS matrices](https://doi.org/10.1007/978-3-662-53018-4_23)".
   - Computes the total XOR cost of implementing each 4×4 matrix in hardware (or in a chosen cost model).
   - Outputs one cost value per line in a file.
 
@@ -31,7 +31,7 @@ This repository contains three key pieces of code (and a data file) that impleme
   - Required by both `filterNoRelMatrices.c` and `binarymatrixlistoflists.c`.
  
 - **cost_from_[XZL+20]**
-  - Contains files with XOR cost, calculated from the method described in the [paper](https://doi.org/10.13154/tosc.v2020.i2.120-145), of the first 5 resistant matrices with $M[0][0]=1$. The codes can be found in this [reporitory](https://github.com/xiangzejun/Optimizing_Implementations_of_Linear_Layers.git).
+  - Contains files with XOR cost, calculated from the method described in the paper [Optimizing Implementations of Linear Layers](https://doi.org/10.13154/tosc.v2020.i2.120-145), of the first 5 resistant matrices with $M[0][0]=1$. The codes can be found in this [reporitory](https://github.com/xiangzejun/Optimizing_Implementations_of_Linear_Layers.git).
 ---
 
 ## Compilation and Usage
