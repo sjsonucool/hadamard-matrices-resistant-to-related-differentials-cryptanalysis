@@ -27,7 +27,7 @@ This repository contains three key pieces of code (and a data file) that impleme
   - Outputs one cost value per line in a file.
 
 - **boxes-ref.dat**  
-  - Contains lookup tables (`Alogtable` and `Logtable`) used for multiplication, exponentiation, and inverse in $\mathrm{GF}(2^8)$ (irreducible modulo polynomial $X^8 + X^4 + X^3 + X + 1$). Additionally, it also contains lookup tables for $\mathrm{GF}(2^4)$ (modulo $X^4 + X^3 + 1$ and $X^4 + X + 1$), $\mathrm{GF}(2^5)$ (modulo $X^5 + X^2 + 1$), $\mathrm{GF}(2^6)$ (modulo $X^6 + X + 1$) which can be used by specifying the correct table in the function `gmul`, correct exponent in function `modinverse` (i.e. $a^{{2^n}-2$), and setting values in for loops repctive to the field sizes. The codes will be updated soon with macros to make the task of switching fields a bit more easier.
+  - Contains lookup tables (`Alogtable` and `Logtable`) used for multiplication, exponentiation, and inverse in $\mathrm{GF}(2^8)$ (irreducible modulo polynomial $X^8 + X^4 + X^3 + X + 1$). Additionally, it also contains lookup tables for $\mathrm{GF}(2^4)$ (modulo $X^4 + X^3 + 1$ and $X^4 + X + 1$), $\mathrm{GF}(2^5)$ (modulo $X^5 + X^2 + 1$), $\mathrm{GF}(2^6)$ (modulo $X^6 + X + 1$) which can be used by specifying the correct table in the function `gmul`, correct exponent in function `modinverse` (i.e. $a^{{2^n}-2}$), and setting values in for loops repctive to the field sizes. The codes will be updated soon with macros to make the task of switching fields a bit more easier.
   - Required by both `filterNoRelMatrices.c` and `binarymatrixlistoflists.c`.
  
 - **cost_from_[XZL+20]**
